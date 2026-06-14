@@ -228,38 +228,6 @@ python python_simulation/dashboard.py
 ```bash
 python python_simulation/report.py
 ```
-
----
-
-## 📷 Project Screenshots
-
-### Wokwi Circuit Simulation
-
-Add image:
-
-```markdown
-![Wokwi Circuit](circuit_diagram/wiring.png)
-```
-
-### Air Quality Dashboard
-
-```markdown
-![Dashboard](outputs/charts/air_quality_chart.png)
-```
-
-### ThingSpeak Dashboard
-
-```markdown
-![ThingSpeak Dashboard](images/thingspeak dashboard.png)
-![ThingSpeak Dashboard](images/thingspeak dashboard_2.png)
-```
-
-### Alert Trigger
-
-```markdown
-![Alert](images/hazardours status.png)
-```
-
 ---
 
 ## 🌱 Real-World Applications
