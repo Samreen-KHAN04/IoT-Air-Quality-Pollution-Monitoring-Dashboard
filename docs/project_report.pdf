@@ -1,0 +1,167 @@
+# IoT Air Quality & Pollution Monitoring Dashboard
+
+## Abstract
+
+Air pollution has become a major environmental concern affecting public health and quality of life. This project presents an IoT-based Air Quality & Pollution Monitoring Dashboard that monitors air quality, temperature, and humidity in real time. The system utilizes an ESP32 microcontroller, DHT22 sensor, and a simulated MQ135 air quality sensor. Sensor data is processed, classified into AQI categories, logged into CSV files, visualized using Python dashboards, and uploaded to ThingSpeak Cloud for remote monitoring and analytics.
+
+The proposed solution demonstrates the integration of IoT, cloud computing, and data analytics for environmental monitoring applications.
+
+---
+
+# 1. Introduction
+
+Air quality monitoring is essential for understanding pollution levels and their impact on human health. Traditional monitoring systems are often expensive and difficult to deploy on a large scale.
+
+The objective of this project is to develop a low-cost and scalable IoT-based monitoring solution capable of collecting environmental data, generating alerts, and visualizing trends through cloud dashboards.
+
+---
+
+# 2. Objectives
+
+* Monitor air quality continuously.
+* Measure temperature and humidity.
+* Classify AQI into meaningful categories.
+* Generate alerts during unsafe conditions.
+* Store environmental data for analysis.
+* Visualize data using dashboards and charts.
+* Upload data to ThingSpeak Cloud.
+
+---
+
+# 3. System Architecture
+
+The system consists of:
+
+* ESP32 Microcontroller
+* DHT22 Sensor
+* MQ135 Sensor (Simulated using Potentiometer in Wokwi)
+* LED Indicator
+* Buzzer
+* Python Data Processing Module
+* ThingSpeak Cloud Platform
+
+### Workflow
+
+Sensor Data → ESP32 → Python Processing → CSV Storage → ThingSpeak Cloud → Dashboard Visualization
+
+---
+
+# 4. Hardware Components
+
+| Component         | Purpose                |
+| ----------------- | ---------------------- |
+| ESP32             | Main Controller        |
+| DHT22             | Temperature & Humidity |
+| MQ135 (Simulated) | Air Quality Monitoring |
+| LED               | Visual Alert           |
+| Buzzer            | Audio Alert            |
+| Breadboard        | Circuit Connections    |
+
+---
+
+# 5. Software Requirements
+
+* Python 3.x
+* Pandas
+* Matplotlib
+* Requests
+* Arduino IDE
+* Wokwi Simulator
+* ThingSpeak Platform
+
+---
+
+# 6. AQI Classification Logic
+
+| AQI Range | Status    |
+| --------- | --------- |
+| 0 – 100   | GOOD      |
+| 101 – 200 | MODERATE  |
+| 201 – 350 | POOR      |
+| 351+      | HAZARDOUS |
+
+---
+
+# 7. Alert Mechanism
+
+The system generates alerts whenever air quality reaches unsafe levels.
+
+| Status    | Alert    |
+| --------- | -------- |
+| GOOD      | No Alert |
+| MODERATE  | No Alert |
+| POOR      | Alert    |
+| HAZARDOUS | Alert    |
+
+Actions:
+
+* LED turns ON
+* Buzzer activates
+* Alert logged to cloud
+
+---
+
+# 8. ThingSpeak Integration
+
+ThingSpeak is used for cloud-based data visualization.
+
+Fields configured:
+
+* Field 1 – Air Quality
+* Field 2 – Temperature
+* Field 3 – Humidity
+* Field 4 – AQI Status Code
+* Field 5 – Alert Flag
+
+The cloud dashboard provides real-time analytics and historical data visualization.
+
+---
+
+# 9. Results
+
+The system successfully:
+
+* Simulated environmental conditions.
+* Generated AQI classifications.
+* Produced CSV logs.
+* Created dashboard charts.
+* Triggered alerts for unsafe conditions.
+* Uploaded data to ThingSpeak Cloud.
+
+Screenshots of the Wokwi circuit, dashboard charts, and ThingSpeak analytics confirm successful implementation.
+
+---
+
+# 10. Applications
+
+* Smart Cities
+* Environmental Monitoring
+* Industrial Pollution Monitoring
+* Indoor Air Quality Assessment
+* Public Health Monitoring
+
+---
+
+# 11. Future Enhancements
+
+* Machine Learning-based AQI Prediction
+* Mobile Application Integration
+* GPS-based Pollution Mapping
+* Email/SMS Alert Notifications
+* Real Hardware Deployment
+
+---
+
+# 12. Conclusion
+
+The IoT Air Quality & Pollution Monitoring Dashboard demonstrates an effective approach for environmental monitoring using IoT technologies. The integration of sensor simulation, cloud analytics, data logging, and dashboard visualization provides a comprehensive solution for monitoring air quality and environmental conditions. The project highlights the practical application of IoT in creating smarter and healthier environments.
+
+---
+
+# References
+
+1. ESP32 Documentation
+2. DHT22 Sensor Datasheet
+3. ThingSpeak Documentation
+4. Wokwi Simulator Documentation
+5. Python Official Documentation
