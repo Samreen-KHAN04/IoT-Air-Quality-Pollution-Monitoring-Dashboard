@@ -1,0 +1,24 @@
+
+AIR QUALITY MONITORING REPORT
+=============================
+
+Total Readings: 20
+
+Average AQI: 284.00
+
+Maximum AQI: 473
+
+Minimum AQI: 59
+
+Average Temperature: 30.97
+
+Average Humidity: 59.00
+
+Status Distribution:
+Status
+HAZARDOUS    9
+GOOD         4
+POOR         4
+MODERATE     3
+Name: count, dtype: int64
+

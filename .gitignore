@@ -1,0 +1,15 @@
+__pycache__/
+
+*.pyc
+
+*.csv
+
+.env
+
+.vscode/
+
+.idea/
+
+outputs/charts/*.png
+
+outputs/reports/*.pdf

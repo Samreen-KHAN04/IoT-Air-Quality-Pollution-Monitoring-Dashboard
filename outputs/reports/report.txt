@@ -1,0 +1,6 @@
+AIR QUALITY REPORT
+========================================
+Total Readings: 100
+Average AQI: 224.81
+Maximum AQI: 491
+Minimum AQI: 50
